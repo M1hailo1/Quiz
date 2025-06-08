@@ -112,6 +112,6 @@ body {
 
 .answer:hover {
   cursor: pointer;
-  border: solid 55px var(--accent3);
   color: #ffffff;
+  background-color: var(--accent3);
 }

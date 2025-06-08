@@ -13,7 +13,7 @@ export const questions = [
     question: "By what name is the patella more generally called?",
     answers: [
       { text: "Paella", correct: false },
-      { text: "Paella", correct: false },
+      { text: "Pastella", correct: false },
       { text: "Shoulder blade", correct: false },
       { text: "Kneecap", correct: true },
     ],
