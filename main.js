@@ -1,5 +1,12 @@
 import { questions } from "./questions.js";
 
+const questionDiv = document.querySelector(".js-question");
+const answerDivs = document.querySelectorAll(".answer");
+const resultGraphic = document.querySelectorAll(".result");
+
+let currentQuestionCounter = 0;
+let score = 0;
+
 function shuffleArray(array) {
   let shuffledArray = array;
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -11,23 +18,23 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 
-function pickOutQuestion() {
-  let pastQuestions = [];
-  for (let i = 0; i < questions.length; i++) {
-    const question = questions;
-  }
+let shuffledArray = shuffleArray(questions);
+startGame();
+
+function startGame() {
+  currentQuestionCounter = 0;
+  score = 0;
+  loadQuestion();
 }
 
-shuffleArray(questions).forEach((question) => {
-  document.querySelector(".js-question").innerHTML = question.question;
-  let firstOption = question.optionOne;
-  let secondOption = question.optionTwo;
-  let thirdOption = question.optionThree;
-  let correctOption = question.optionCorrect;
-  let answersArray = [firstOption, secondOption, thirdOption, correctOption];
-  let shuffledAnswers = shuffleArray(answersArray);
-  for (let i = 0; i < shuffledAnswers.length; i++) {
-    document.querySelectorAll(".answer").innerHTML =
-      shuffledAnswers.firstOption;
-  }
-});
+function loadQuestion() {
+  let currentQuestion = shuffledArray[currentQuestionCounter];
+  questionDiv.innerHTML = currentQuestion.question;
+  resultGraphic[currentQuestionCounter].classList.add("current");
+
+  let shuffledAnswers = shuffleArray(currentQuestion.answers);
+  console.log(shuffledAnswers);
+  shuffledAnswers.forEach((answer, index) => {
+    answerDivs[index].innerHTML = answer.text;
+  });
+}

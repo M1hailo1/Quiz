@@ -45,6 +45,15 @@ body {
   justify-content: center;
   color: var(--text);
   border-radius: 15px;
+  transition: all 250ms;
+}
+
+.current {
+  background-color: var(--accent3);
+}
+
+.result:hover {
+  border: solid 25px var(--accent3);
 }
 
 .score {
@@ -103,5 +112,6 @@ body {
 
 .answer:hover {
   cursor: pointer;
-  border: solid 25px var(--accent3);
+  border: solid 55px var(--accent3);
+  color: #ffffff;
 }
