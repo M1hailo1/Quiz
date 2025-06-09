@@ -6,6 +6,8 @@ const resultGraphic = document.querySelectorAll(".result");
 const resetButton = document.querySelector(".js-reset-button");
 const scoreGraphic = document.querySelector(".js-score");
 const timerGraphic = document.querySelector(".js-timer");
+const startGameDiv = document.querySelector(".js-start-game-div");
+const startGameButton = document.querySelector(".js-start-game-button");
 
 let currentQuestionCounter = 0;
 let score = 0;
@@ -27,11 +29,12 @@ function shuffleArray(array) {
 }
 
 let shuffledArray = shuffleArray(questions);
-startGame();
 
 function startGame() {
   currentQuestionCounter = 0;
   score = 0;
+  startGameDiv.classList.add("hide");
+  startGameButton.classList.add("hide");
   loadQuestion();
 }
 
@@ -127,6 +130,8 @@ function handleTimeout() {
   timeout = setTimeout(loadQuestion, 2500);
 }
 
+startGameButton.addEventListener("click", startGame);
+
 resetButton.addEventListener("click", restartGame);
 
 answerDivs.forEach((answer, index) => {
@@ -143,4 +148,7 @@ answerDivs.forEach((answer, index) => {
 // Add dark/light theme
 // Add language swap
 // Add clickability to result graphics
-// Add media
+// Add media queries
+// Add questions with audio/images ??
+// Add timer graphic
+// Add start button
