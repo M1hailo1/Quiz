@@ -33,11 +33,11 @@ function startGame() {
 }
 
 function loadQuestion() {
-  if (currentQuestionCounter === 10) return;
-
   answerDivs.forEach((answer) => {
     answer.classList.remove("correct", "wrong");
   });
+
+  if (currentQuestionCounter === 10) return;
 
   let currentQuestion = shuffledArray[currentQuestionCounter];
   questionDiv.innerHTML = currentQuestion.question;
@@ -95,3 +95,9 @@ answerDivs.forEach((answer, index) => {
     click++;
   });
 });
+
+// Add dark/light theme
+// Add language swap
+// Add timer to questions !!
+// Add clickability to result graphics
+// Add media

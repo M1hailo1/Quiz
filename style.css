@@ -147,3 +147,69 @@ body {
   background-color: firebrick;
   color: white;
 }
+
+@media (max-width: 900px) {
+  .header {
+    margin-top: 20px;
+    width: 600px;
+  }
+
+  .results {
+    margin-top: 10px;
+    grid-template-columns: repeat(10, 35px);
+    gap: 10px;
+  }
+
+  .result {
+    height: 35px;
+    border-radius: 12px;
+    transition: all 250ms;
+  }
+
+  .result:hover {
+    border: solid 18px var(--accent3);
+  }
+
+  .score {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    color: var(--text);
+  }
+
+  .game {
+    width: 500px;
+    height: 550px;
+    margin-top: 30px;
+    border: solid 3px var(--accent3);
+    justify-content: space-evenly;
+  }
+
+  .question {
+    width: 375px;
+    height: 170px;
+    font-size: 1.7rem;
+    border-bottom: solid 3px var(--accent3);
+  }
+
+  .answers {
+    width: 450px;
+    height: 350px;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 350px);
+    gap: 10px;
+  }
+
+  .answer {
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.7rem;
+    transition: all 350ms;
+  }
+
+  .reset-button {
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    font-size: 1.7rem;
+  }
+}
