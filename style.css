@@ -113,7 +113,7 @@ body {
 .answer:hover {
   cursor: pointer;
   color: #ffffff;
-  background-color: var(--accent3);
+  box-shadow: 0px 0px 10px var(--accent3);
 }
 
 .reset-button {

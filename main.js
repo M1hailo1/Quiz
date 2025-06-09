@@ -33,6 +33,8 @@ function startGame() {
 }
 
 function loadQuestion() {
+  if (currentQuestionCounter === 10) return;
+
   answerDivs.forEach((answer) => {
     answer.classList.remove("correct", "wrong");
   });

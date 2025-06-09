@@ -91,4 +91,374 @@ export const questions = [
       { text: "Paraguay", correct: true },
     ],
   },
+  {
+    question: "What is the largest internal organ in the human body?",
+    answers: [
+      { text: "Heart", correct: false },
+      { text: "Lung", correct: false },
+      { text: "Kidney", correct: false },
+      { text: "Liver", correct: true },
+    ],
+  },
+  {
+    question: "Which element has the chemical symbol 'O'?",
+    answers: [
+      { text: "Osmium", correct: false },
+      { text: "Opal", correct: false },
+      { text: "Oganesson", correct: false },
+      { text: "Oxygen", correct: true },
+    ],
+  },
+  {
+    question: "Which famous artist cut off part of his own ear?",
+    answers: [
+      { text: "Leonardo da Vinci", correct: false },
+      { text: "Claude Monet", correct: false },
+      { text: "Pablo Picasso", correct: false },
+      { text: "Vincent van Gogh", correct: true },
+    ],
+  },
+  {
+    question: "What is the capital city of Canada?",
+    answers: [
+      { text: "Toronto", correct: false },
+      { text: "Vancouver", correct: false },
+      { text: "Montreal", correct: false },
+      { text: "Ottawa", correct: true },
+    ],
+  },
+  {
+    question: "How many legs does a lobster have?",
+    answers: [
+      { text: "6", correct: false },
+      { text: "8", correct: false },
+      { text: "12", correct: false },
+      { text: "10", correct: true },
+    ],
+  },
+  {
+    question: "Which planet has the most moons?",
+    answers: [
+      { text: "Earth", correct: false },
+      { text: "Mars", correct: false },
+      { text: "Jupiter", correct: false },
+      { text: "Saturn", correct: true },
+    ],
+  },
+  {
+    question: "What is the smallest country in the world?",
+    answers: [
+      { text: "Monaco", correct: false },
+      { text: "Liechtenstein", correct: false },
+      { text: "San Marino", correct: false },
+      { text: "Vatican City", correct: true },
+    ],
+  },
+  {
+    question: "Which instrument has 47 strings and 7 pedals?",
+    answers: [
+      { text: "Piano", correct: false },
+      { text: "Violin", correct: false },
+      { text: "Cello", correct: false },
+      { text: "Harp", correct: true },
+    ],
+  },
+  {
+    question: "Which bird is known for mimicking human speech?",
+    answers: [
+      { text: "Crow", correct: false },
+      { text: "Owl", correct: false },
+      { text: "Eagle", correct: false },
+      { text: "Parrot", correct: true },
+    ],
+  },
+  {
+    question: "Which continent is the Sahara Desert located on?",
+    answers: [
+      { text: "Asia", correct: false },
+      { text: "Australia", correct: false },
+      { text: "South America", correct: false },
+      { text: "Africa", correct: true },
+    ],
+  },
+  {
+    question: "What is the main ingredient in guacamole?",
+    answers: [
+      { text: "Tomato", correct: false },
+      { text: "Cucumber", correct: false },
+      { text: "Lettuce", correct: false },
+      { text: "Avocado", correct: true },
+    ],
+  },
+  {
+    question:
+      "Which country gifted the Statue of Liberty to the United States?",
+    answers: [
+      { text: "Germany", correct: false },
+      { text: "Italy", correct: false },
+      { text: "Spain", correct: false },
+      { text: "France", correct: true },
+    ],
+  },
+  {
+    question: "Which ocean is the largest?",
+    answers: [
+      { text: "Atlantic Ocean", correct: false },
+      { text: "Indian Ocean", correct: false },
+      { text: "Arctic Ocean", correct: false },
+      { text: "Pacific Ocean", correct: true },
+    ],
+  },
+  {
+    question: "Who was the first man to step on the Moon?",
+    answers: [
+      { text: "Buzz Aldrin", correct: false },
+      { text: "Yuri Gagarin", correct: false },
+      { text: "Michael Collins", correct: false },
+      { text: "Neil Armstrong", correct: true },
+    ],
+  },
+  {
+    question: "Which blood type is known as the universal donor?",
+    answers: [
+      { text: "AB+", correct: false },
+      { text: "B-", correct: false },
+      { text: "A+", correct: false },
+      { text: "O-", correct: true },
+    ],
+  },
+  {
+    question: "How many colors are there in a rainbow?",
+    answers: [
+      { text: "5", correct: false },
+      { text: "6", correct: false },
+      { text: "8", correct: false },
+      { text: "7", correct: true },
+    ],
+  },
+  {
+    question: "What is the capital of Japan?",
+    answers: [
+      { text: "Kyoto", correct: false },
+      { text: "Osaka", correct: false },
+      { text: "Hiroshima", correct: false },
+      { text: "Tokyo", correct: true },
+    ],
+  },
+  {
+    question: "Which continent has the most countries?",
+    answers: [
+      { text: "Europe", correct: false },
+      { text: "Asia", correct: false },
+      { text: "South America", correct: false },
+      { text: "Africa", correct: true },
+    ],
+  },
+  {
+    question: "What is the process by which plants make their food?",
+    answers: [
+      { text: "Fermentation", correct: false },
+      { text: "Digestion", correct: false },
+      { text: "Respiration", correct: false },
+      { text: "Photosynthesis", correct: true },
+    ],
+  },
+  {
+    question: "What is the capital of Australia?",
+    answers: [
+      { text: "Sydney", correct: false },
+      { text: "Melbourne", correct: false },
+      { text: "Brisbane", correct: false },
+      { text: "Canberra", correct: true },
+    ],
+  },
+  {
+    question: "Which planet is known as the Red Planet?",
+    answers: [
+      { text: "Mercury", correct: false },
+      { text: "Venus", correct: false },
+      { text: "Jupiter", correct: false },
+      { text: "Mars", correct: true },
+    ],
+  },
+  {
+    question: "What is the boiling point of water in Celsius?",
+    answers: [
+      { text: "90°C", correct: false },
+      { text: "50°C", correct: false },
+      { text: "80°C", correct: false },
+      { text: "100°C", correct: true },
+    ],
+  },
+  {
+    question: "Which instrument is known as the 'king of instruments'?",
+    answers: [
+      { text: "Violin", correct: false },
+      { text: "Trumpet", correct: false },
+      { text: "Guitar", correct: false },
+      { text: "Organ", correct: true },
+    ],
+  },
+  {
+    question: "How many players are there in a soccer team on the field?",
+    answers: [
+      { text: "10", correct: false },
+      { text: "12", correct: false },
+      { text: "8", correct: false },
+      { text: "11", correct: true },
+    ],
+  },
+  {
+    question: "Which language has the most native speakers?",
+    answers: [
+      { text: "English", correct: false },
+      { text: "Spanish", correct: false },
+      { text: "Hindi", correct: false },
+      { text: "Mandarin", correct: true },
+    ],
+  },
+  {
+    question: "Which animal is known for its black and white stripes?",
+    answers: [
+      { text: "Leopard", correct: false },
+      { text: "Tiger", correct: false },
+      { text: "Giraffe", correct: false },
+      { text: "Zebra", correct: true },
+    ],
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    answers: [
+      { text: "Gd", correct: false },
+      { text: "Ag", correct: false },
+      { text: "Ge", correct: false },
+      { text: "Au", correct: true },
+    ],
+  },
+  {
+    question: "What is the currency of the United Kingdom?",
+    answers: [
+      { text: "Euro", correct: false },
+      { text: "Dollar", correct: false },
+      { text: "Franc", correct: false },
+      { text: "Pound sterling", correct: true },
+    ],
+  },
+  {
+    question: "Which famous scientist developed the theory of relativity?",
+    answers: [
+      { text: "Isaac Newton", correct: false },
+      { text: "Nikola Tesla", correct: false },
+      { text: "Stephen Hawking", correct: false },
+      { text: "Albert Einstein", correct: true },
+    ],
+  },
+  {
+    question: "What is the hardest natural substance on Earth?",
+    answers: [
+      { text: "Iron", correct: false },
+      { text: "Gold", correct: false },
+      { text: "Quartz", correct: false },
+      { text: "Diamond", correct: true },
+    ],
+  },
+  {
+    question: "What is the most widely spoken language in the world?",
+    answers: [
+      { text: "English", correct: false },
+      { text: "Spanish", correct: false },
+      { text: "Arabic", correct: false },
+      { text: "Mandarin", correct: true },
+    ],
+  },
+  {
+    question: "Which mammal can fly?",
+    answers: [
+      { text: "Flying squirrel", correct: false },
+      { text: "Penguin", correct: false },
+      { text: "Sugar glider", correct: false },
+      { text: "Bat", correct: true },
+    ],
+  },
+  {
+    question: "Which country is known for the maple leaf?",
+    answers: [
+      { text: "Switzerland", correct: false },
+      { text: "Norway", correct: false },
+      { text: "Sweden", correct: false },
+      { text: "Canada", correct: true },
+    ],
+  },
+  {
+    question: "How many bones are in the adult human body?",
+    answers: [
+      { text: "198", correct: false },
+      { text: "208", correct: false },
+      { text: "202", correct: false },
+      { text: "206", correct: true },
+    ],
+  },
+  {
+    question: "Which month has the fewest days?",
+    answers: [
+      { text: "April", correct: false },
+      { text: "June", correct: false },
+      { text: "September", correct: false },
+      { text: "February", correct: true },
+    ],
+  },
+  {
+    question: "What does the 'www' in a website address stand for?",
+    answers: [
+      { text: "World Wide Work", correct: false },
+      { text: "Web Web Web", correct: false },
+      { text: "Wireless Web World", correct: false },
+      { text: "World Wide Web", correct: true },
+    ],
+  },
+  {
+    question: "Which is the only continent without a desert?",
+    answers: [
+      { text: "Africa", correct: false },
+      { text: "Asia", correct: false },
+      { text: "Europe", correct: false },
+      { text: "Europe", correct: true },
+    ],
+  },
+  {
+    question: "Which part of the plant conducts photosynthesis?",
+    answers: [
+      { text: "Roots", correct: false },
+      { text: "Stem", correct: false },
+      { text: "Flowers", correct: false },
+      { text: "Leaves", correct: true },
+    ],
+  },
+  {
+    question: "Which country invented pizza?",
+    answers: [
+      { text: "France", correct: false },
+      { text: "Greece", correct: false },
+      { text: "Turkey", correct: false },
+      { text: "Italy", correct: true },
+    ],
+  },
+  {
+    question: "What do bees collect and use to create honey?",
+    answers: [
+      { text: "Dew", correct: false },
+      { text: "Sap", correct: false },
+      { text: "Pollen", correct: false },
+      { text: "Nectar", correct: true },
+    ],
+  },
+  {
+    question: "How many planets are in our solar system?",
+    answers: [
+      { text: "10", correct: false },
+      { text: "11", correct: false },
+      { text: "7", correct: false },
+      { text: "8", correct: true },
+    ],
+  },
 ];
