@@ -116,6 +116,28 @@ body {
   background-color: var(--accent3);
 }
 
+.reset-button {
+  margin-top: 30px;
+  height: 60px;
+  width: 200px;
+  color: var(--text);
+  font-size: 2rem;
+  background-color: var(--background);
+  border: solid 3px var(--accent3);
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.reset-button:hover {
+  color: white;
+  background-color: var(--accent3);
+}
+
+.reset-button-show {
+  display: block;
+}
+
 .correct {
   background-color: green;
   color: white;

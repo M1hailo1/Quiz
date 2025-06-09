@@ -3,6 +3,7 @@ import { questions } from "./questions.js";
 const questionDiv = document.querySelector(".js-question");
 const answerDivs = document.querySelectorAll(".answer");
 const resultGraphic = document.querySelectorAll(".result");
+const resetButton = document.querySelector(".js-reset-button");
 let scoreGraphic = document.querySelector(".js-score");
 
 let currentQuestionCounter = 0;
@@ -67,11 +68,27 @@ function answerHandling(answer, index) {
   }
 }
 
+function loadReset() {
+  if (currentQuestionCounter === 10) {
+    resetButton.classList.add("reset-button-show");
+  }
+}
+
+function restartGame() {
+  startGame();
+  scoreGraphic.innerHTML = "Score: 0/0";
+  resultGraphic[9].classList.remove("current");
+  resetButton.classList.remove("reset-button-show");
+}
+
+resetButton.addEventListener("click", restartGame);
+
 answerDivs.forEach((answer, index) => {
   answer.addEventListener("click", () => {
     if (!click) {
       answerHandling(answer, index);
-      timeout = setTimeout(loadQuestion, 3000);
+      timeout = setTimeout(loadQuestion, 1500);
+      loadReset();
     }
     click++;
   });
