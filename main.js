@@ -48,25 +48,25 @@ function loadQuestion() {
   click = 0;
 }
 
-// function answerHandling(answer) {
-//   if (
-//     answer.innerText === shuffledArray.answers.text &&
-//     shuffledArray.answers.correct
-//   ) {
-//       answer.classList.add("correct")
-//     //dodaje se klasa zelena
-//     score++;
-//     scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
-//   } else {
-//      answer.classList.add("correct")
-//     //dodaje se klasa crvena
-//     scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
-//   }
-// }
+function answerHandling(answer, index) {
+  const currentQuestion = shuffledArray[currentQuestionCounter - 1];
+  if (
+    answer.innerText === currentQuestion.answers[index].text &&
+    currentQuestion.answers[index].correct
+  ) {
+    answer.classList.add("correct");
+    score++;
+    scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
+  } else {
+    answer.classList.add("wrong");
+    scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
+  }
+}
 
-answerDivs.forEach((answer) => {
+answerDivs.forEach((answer, index) => {
   answer.addEventListener("click", () => {
     if (!click) {
+      answerHandling(answer, index);
       timeout = setTimeout(loadQuestion, 3000);
     }
     click++;

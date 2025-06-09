@@ -115,3 +115,13 @@ body {
   color: #ffffff;
   background-color: var(--accent3);
 }
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.wrong {
+  background-color: firebrick;
+  color: white;
+}
