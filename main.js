@@ -4,12 +4,15 @@ const questionDiv = document.querySelector(".js-question");
 const answerDivs = document.querySelectorAll(".answer");
 const resultGraphic = document.querySelectorAll(".result");
 const resetButton = document.querySelector(".js-reset-button");
-let scoreGraphic = document.querySelector(".js-score");
+const scoreGraphic = document.querySelector(".js-score");
+const timerGraphic = document.querySelector(".js-timer");
 
 let currentQuestionCounter = 0;
 let score = 0;
-let timeout;
 let click = 0;
+let timeout;
+let timer;
+let timeLeft = 10;
 scoreGraphic.innerHTML = "Score: 0/0";
 
 function shuffleArray(array) {
@@ -53,9 +56,12 @@ function loadQuestion() {
   }
   currentQuestionCounter++;
   click = 0;
+  clearInterval(timer);
+  startTimer();
 }
 
 function answerHandling(answer, index) {
+  clearInterval(timer);
   const currentQuestion = shuffledArray[currentQuestionCounter - 1];
   if (
     answer.innerText === currentQuestion.answers[index].text &&
@@ -67,6 +73,12 @@ function answerHandling(answer, index) {
   } else {
     answer.classList.add("wrong");
     scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
+    answerDivs.forEach((answer, index) => {
+      const currentQuestion = shuffledArray[currentQuestionCounter - 1];
+      if (currentQuestion.answers[index].correct) {
+        answer.classList.add("correct");
+      }
+    });
   }
 }
 
@@ -77,10 +89,42 @@ function loadReset() {
 }
 
 function restartGame() {
-  startGame();
   scoreGraphic.innerHTML = "Score: 0/0";
   resultGraphic[9].classList.remove("current");
   resetButton.classList.remove("reset-button-show");
+  clearInterval(timer);
+  timerGraphic.innerHTML = "Time left: 10";
+  startGame();
+}
+
+function startTimer() {
+  timeLeft = 10;
+  timerGraphic.innerHTML = `Time left: ${timeLeft}`;
+
+  timer = setInterval(() => {
+    timeLeft--;
+    timerGraphic.innerHTML = `Time left: ${timeLeft}`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      timerGraphic.innerHTML = "Time's up!";
+      handleTimeout();
+    }
+  }, 1000);
+}
+
+function handleTimeout() {
+  scoreGraphic.innerHTML = `Score: ${score}/${currentQuestionCounter}`;
+
+  answerDivs.forEach((answer, index) => {
+    const currentQuestion = shuffledArray[currentQuestionCounter - 1];
+    if (currentQuestion.answers[index].correct) {
+      answer.classList.add("correct");
+    }
+  });
+
+  loadReset();
+  timeout = setTimeout(loadQuestion, 2500);
 }
 
 resetButton.addEventListener("click", restartGame);
@@ -89,7 +133,7 @@ answerDivs.forEach((answer, index) => {
   answer.addEventListener("click", () => {
     if (!click) {
       answerHandling(answer, index);
-      timeout = setTimeout(loadQuestion, 1500);
+      timeout = setTimeout(loadQuestion, 2500);
       loadReset();
     }
     click++;
@@ -98,6 +142,5 @@ answerDivs.forEach((answer, index) => {
 
 // Add dark/light theme
 // Add language swap
-// Add timer to questions !!
 // Add clickability to result graphics
 // Add media
