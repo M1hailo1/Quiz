@@ -32,6 +32,10 @@ function startGame() {
 }
 
 function loadQuestion() {
+  answerDivs.forEach((answer) => {
+    answer.classList.remove("correct", "wrong");
+  });
+
   let currentQuestion = shuffledArray[currentQuestionCounter];
   questionDiv.innerHTML = currentQuestion.question;
   resultGraphic[currentQuestionCounter].classList.add("current");
