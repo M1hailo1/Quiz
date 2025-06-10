@@ -646,4 +646,211 @@ export const questionsSerbian = [
       { text: "Afrika", correct: true },
     ],
   },
+  {
+    question: "Koji proces biljke koriste da bi pravile svoju hranu?",
+    answers: [
+      { text: "Fermentacija", correct: false },
+      { text: "Varenje", correct: false },
+      { text: "Disanje", correct: false },
+      { text: "Fotosinteza", correct: true },
+    ],
+  },
+  {
+    question: "Koji je glavni grad Australije?",
+    answers: [
+      { text: "Sidnej", correct: false },
+      { text: "Melburn", correct: false },
+      { text: "Brizbejn", correct: false },
+      { text: "Kanbera", correct: true },
+    ],
+  },
+  {
+    question: "Koja planeta je poznata kao Crvena planeta?",
+    answers: [
+      { text: "Merkur", correct: false },
+      { text: "Venera", correct: false },
+      { text: "Jupiter", correct: false },
+      { text: "Mars", correct: true },
+    ],
+  },
+  {
+    question: "Koja je tačka ključanja vode u Celzijusima?",
+    answers: [
+      { text: "90°C", correct: false },
+      { text: "50°C", correct: false },
+      { text: "80°C", correct: false },
+      { text: "100°C", correct: true },
+    ],
+  },
+  {
+    question: "Koji instrument se naziva 'kraljem instrumenata'?",
+    answers: [
+      { text: "Violina", correct: false },
+      { text: "Truba", correct: false },
+      { text: "Gitara", correct: false },
+      { text: "Orgulje", correct: true },
+    ],
+  },
+  {
+    question: "Koliko igrača ima fudbalski tim na terenu?",
+    answers: [
+      { text: "10", correct: false },
+      { text: "12", correct: false },
+      { text: "8", correct: false },
+      { text: "11", correct: true },
+    ],
+  },
+  {
+    question: "Koji jezik ima najviše izvornih govornika?",
+    answers: [
+      { text: "Engleski", correct: false },
+      { text: "Španski", correct: false },
+      { text: "Hindi", correct: false },
+      { text: "Mandarinski", correct: true },
+    ],
+  },
+  {
+    question: "Koja životinja je poznata po crno-belim prugama?",
+    answers: [
+      { text: "Leopard", correct: false },
+      { text: "Tigar", correct: false },
+      { text: "Žirafa", correct: false },
+      { text: "Zebra", correct: true },
+    ],
+  },
+  {
+    question: "Koji je hemijski simbol za zlato?",
+    answers: [
+      { text: "Gd", correct: false },
+      { text: "Ag", correct: false },
+      { text: "Ge", correct: false },
+      { text: "Au", correct: true },
+    ],
+  },
+  {
+    question: "Koja je valuta Ujedinjenog Kraljevstva?",
+    answers: [
+      { text: "Evro", correct: false },
+      { text: "Dolar", correct: false },
+      { text: "Franak", correct: false },
+      { text: "Funta sterling", correct: true },
+    ],
+  },
+  {
+    question: "Koji poznati naučnik je razvio teoriju relativnosti?",
+    answers: [
+      { text: "Isak Njutn", correct: false },
+      { text: "Nikola Tesla", correct: false },
+      { text: "Stiven Hoking", correct: false },
+      { text: "Albert Ajnštajn", correct: true },
+    ],
+  },
+  {
+    question: "Koja je najtvrđa prirodna supstanca na Zemlji?",
+    answers: [
+      { text: "Gvožđe", correct: false },
+      { text: "Zlato", correct: false },
+      { text: "Kvarc", correct: false },
+      { text: "Dijamant", correct: true },
+    ],
+  },
+  {
+    question: "Koji je najrasprostranjeniji jezik na svetu?",
+    answers: [
+      { text: "Engleski", correct: false },
+      { text: "Španski", correct: false },
+      { text: "Arapski", correct: false },
+      { text: "Mandarinski", correct: true },
+    ],
+  },
+  {
+    question: "Koji sisar može da leti?",
+    answers: [
+      { text: "Leteća veverica", correct: false },
+      { text: "Pingvin", correct: false },
+      { text: "Šećerni letač", correct: false },
+      { text: "Slepi miš", correct: true },
+    ],
+  },
+  {
+    question: "Koja zemlja je poznata po javorovom listu?",
+    answers: [
+      { text: "Švajcarska", correct: false },
+      { text: "Norveška", correct: false },
+      { text: "Švedska", correct: false },
+      { text: "Kanada", correct: true },
+    ],
+  },
+  {
+    question: "Koliko kostiju ima odraslo ljudsko telo?",
+    answers: [
+      { text: "198", correct: false },
+      { text: "208", correct: false },
+      { text: "202", correct: false },
+      { text: "206", correct: true },
+    ],
+  },
+  {
+    question: "Koji mesec ima najmanje dana?",
+    answers: [
+      { text: "April", correct: false },
+      { text: "Jun", correct: false },
+      { text: "Septembar", correct: false },
+      { text: "Februar", correct: true },
+    ],
+  },
+  {
+    question: "Šta znači 'www' u adresi veb sajta?",
+    answers: [
+      { text: "Svetski široki rad", correct: false },
+      { text: "Veb Veb Veb", correct: false },
+      { text: "Bežični veb svet", correct: false },
+      { text: "Svetska mreža (World Wide Web)", correct: true },
+    ],
+  },
+  {
+    question: "Koji je jedini kontinent bez pustinje?",
+    answers: [
+      { text: "Afrika", correct: false },
+      { text: "Azija", correct: false },
+      { text: "Evropa", correct: true },
+      { text: "Evropa", correct: false },
+    ],
+  },
+  {
+    question: "Koji deo biljke vrši fotosintezu?",
+    answers: [
+      { text: "Koren", correct: false },
+      { text: "Stablo", correct: false },
+      { text: "Cvetovi", correct: false },
+      { text: "Listovi", correct: true },
+    ],
+  },
+  {
+    question: "Koja zemlja je izmislila picu?",
+    answers: [
+      { text: "Francuska", correct: false },
+      { text: "Grčka", correct: false },
+      { text: "Turska", correct: false },
+      { text: "Italija", correct: true },
+    ],
+  },
+  {
+    question: "Šta pčele sakupljaju i koriste za pravljenje meda?",
+    answers: [
+      { text: "Rosu", correct: false },
+      { text: "Smolu", correct: false },
+      { text: "Polen", correct: false },
+      { text: "Nektar", correct: true },
+    ],
+  },
+  {
+    question: "Koliko planeta ima u našem Sunčevom sistemu?",
+    answers: [
+      { text: "10", correct: false },
+      { text: "11", correct: false },
+      { text: "7", correct: false },
+      { text: "8", correct: true },
+    ],
+  },
 ];
