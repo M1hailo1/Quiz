@@ -95,7 +95,9 @@ function answerHandling(answer, index) {
 
 function loadReset() {
   if (currentQuestionCounter === 10) {
-    resetButton.classList.add("reset-button-show");
+    setTimeout(() => {
+      resetButton.classList.add("reset-button-show");
+    }, 2500);
   }
 }
 
@@ -156,7 +158,7 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
+// Add congratulations
 // Add dark/light theme
-// Add media queries
 // Add clickability to result graphics
 // Add questions with audio/images ??
