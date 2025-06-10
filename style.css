@@ -190,12 +190,6 @@ option img {
   transition: all 350ms;
 }
 
-.answer:hover {
-  cursor: pointer;
-  color: #ffffff;
-  box-shadow: 0px 0px 10px var(--accent3);
-}
-
 .reset-button {
   margin-top: 30px;
   height: 60px;
@@ -228,7 +222,15 @@ option img {
   color: white;
 }
 
-@media (max-width: 900px) {
+@media only screen and (min-width: 900px) {
+  .answer:hover {
+    color: #fff !important;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--accent3);
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .header {
     margin-top: 20px;
     width: 600px;
@@ -302,5 +304,161 @@ option img {
     height: 50px;
     width: 180px;
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 15px;
+    width: 400px;
+    flex-direction: column;
+  }
+
+  .results {
+    margin-top: 10px;
+    grid-template-columns: repeat(10, 35px);
+    gap: 10px;
+  }
+
+  .result {
+    height: 35px;
+    border-radius: 12px;
+    transition: all 250ms;
+  }
+
+  .result:hover {
+    border: solid 17px var(--accent3);
+  }
+
+  .score {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: var(--text);
+  }
+
+  .game {
+    width: 400px;
+    height: 550px;
+    margin-top: 20px;
+    border: solid 3px var(--accent3);
+    justify-content: space-evenly;
+  }
+
+  .start-game-div {
+    height: 550px;
+    width: 400px;
+  }
+
+  .start-game-button {
+    height: 80px;
+    width: 300px;
+    font-size: 2.3rem;
+  }
+
+  .question {
+    width: 375px;
+    height: 150px;
+    font-size: 1.7rem;
+    border-bottom: solid 3px var(--accent3);
+  }
+
+  .answers {
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 350px);
+    gap: 10px;
+  }
+
+  .answer {
+    height: 65px;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    transition: all 350ms;
+  }
+
+  .reset-button {
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    margin-top: 15px;
+    width: 400px;
+    flex-direction: column;
+  }
+
+  .results {
+    margin-top: 10px;
+    grid-template-columns: repeat(5, 35px);
+    gap: 10px;
+  }
+
+  .result {
+    height: 35px;
+    border-radius: 12px;
+    transition: all 250ms;
+  }
+
+  .result:hover {
+    border: solid 17px var(--accent3);
+  }
+
+  .score {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--text);
+  }
+
+  .game {
+    width: 350px;
+    height: 520px;
+    margin-top: 10px;
+    border: solid 3px var(--accent3);
+    justify-content: space-evenly;
+  }
+
+  .start-game-div {
+    height: 520px;
+    width: 350px;
+  }
+
+  .start-game-button {
+    height: 70px;
+    width: 250px;
+    font-size: 2.2rem;
+  }
+
+  .question {
+    width: 310px;
+    height: 150px;
+    font-size: 1.4rem;
+    border-bottom: solid 2px var(--accent3);
+  }
+
+  .answers {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 300px);
+    gap: 8px;
+  }
+
+  .answer {
+    height: 65px;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    transition: all 350ms;
+  }
+
+  .reset-button {
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    font-size: 1.5rem;
   }
 }
