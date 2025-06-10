@@ -32,7 +32,8 @@ function shuffleArray(array) {
 let shuffledArray = shuffleArray(questions);
 
 languageSelect.addEventListener("change", () => {
-  if (languageSelect.value === "sr")
+  if (languageSelect.value === "en") shuffledArray = shuffleArray(questions);
+  else if (languageSelect.value === "sr")
     shuffledArray = shuffleArray(questionsSerbian);
 });
 
@@ -151,9 +152,8 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
-// Add language swap
-// Add media queries
 // Add dark/light theme
+// Add media queries
 // Add timer graphic
 // Add clickability to result graphics
 // Add questions with audio/images ??
