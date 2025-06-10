@@ -9,6 +9,7 @@ const timerGraphic = document.querySelector(".js-timer");
 const startGameDiv = document.querySelector(".js-start-game-div");
 const startGameButton = document.querySelector(".js-start-game-button");
 const languageSelect = document.querySelector(".js-language-select");
+const progressBar = document.querySelector(".js-progress-bar");
 
 let currentQuestionCounter = 0;
 let score = 0;
@@ -110,10 +111,13 @@ function restartGame() {
 function startTimer() {
   timeLeft = 10;
   timerGraphic.innerHTML = `Time left: ${timeLeft}`;
+  progressBar.style.width = 100 + "%";
 
   timer = setInterval(() => {
     timeLeft--;
     timerGraphic.innerHTML = `Time left: ${timeLeft}`;
+    const progress = (timeLeft / 10) * 100;
+    progressBar.style.width = progress + "%";
 
     if (timeLeft <= 0) {
       clearInterval(timer);
@@ -154,6 +158,5 @@ answerDivs.forEach((answer, index) => {
 
 // Add dark/light theme
 // Add media queries
-// Add timer graphic
 // Add clickability to result graphics
 // Add questions with audio/images ??
