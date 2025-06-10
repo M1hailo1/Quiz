@@ -89,7 +89,7 @@ body {
 }
 
 .start-game-button {
-  height: 100px;
+  height: 120px;
   width: 400px;
   color: var(--text);
   font-size: 3rem;
@@ -100,6 +100,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 250ms;
+  flex-direction: column;
 }
 
 .start-game-button:hover {
@@ -110,6 +111,21 @@ body {
 
 .hide {
   display: none;
+}
+
+.language-select {
+  height: 50px;
+  width: 200px;
+  background-color: var(--background);
+  color: var(--text);
+  position: absolute;
+  margin-top: 200px;
+  border: none;
+  font-size: 1.3rem;
+}
+
+option img {
+  height: 30px;
 }
 
 .timer {
@@ -228,6 +244,17 @@ body {
     margin-top: 30px;
     border: solid 3px var(--accent3);
     justify-content: space-evenly;
+  }
+
+  .start-game-div {
+    height: 550px;
+    width: 500px;
+  }
+
+  .start-game-button {
+    height: 100px;
+    width: 350px;
+    font-size: 2.5rem;
   }
 
   .question {

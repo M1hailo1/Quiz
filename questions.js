@@ -462,3 +462,188 @@ export const questions = [
     ],
   },
 ];
+
+export const questionsSerbian = [
+  {
+    question:
+      "Koji veliki grad je prvi uveo gradsku tramvajsku liniju 1832. godine?",
+    answers: [
+      { text: "Beč", correct: false },
+      { text: "London", correct: false },
+      { text: "Berlin", correct: false },
+      { text: "Njujork", correct: true },
+    ],
+  },
+  {
+    question: "Kako se češće naziva patela?",
+    answers: [
+      { text: "Paelja", correct: false },
+      { text: "Pastela", correct: false },
+      { text: "Lopatica", correct: false },
+      { text: "Čašica kolena", correct: true },
+    ],
+  },
+  {
+    question: "Koja gasovita planeta je najveća u Sunčevom sistemu?",
+    answers: [
+      { text: "Neptun", correct: false },
+      { text: "Uran", correct: false },
+      { text: "Saturn", correct: false },
+      { text: "Jupiter", correct: true },
+    ],
+  },
+  {
+    question: "Koje je uobičajeno ime za orku?",
+    answers: [
+      { text: "Tele", correct: false },
+      { text: "Beli ajkula", correct: false },
+      { text: "Beluga", correct: false },
+      { text: "Ubilački kit", correct: true },
+    ],
+  },
+  {
+    question: "Kako se zovu biljke koje gube lišće u jesen?",
+    answers: [
+      { text: "Zimzelene", correct: false },
+      { text: "Mesojede", correct: false },
+      { text: "Četinari", correct: false },
+      { text: "Listopadne", correct: true },
+    ],
+  },
+  {
+    question: "Koliko dirki ima klavir?",
+    answers: [
+      { text: "80", correct: false },
+      { text: "100", correct: false },
+      { text: "62", correct: false },
+      { text: "88", correct: true },
+    ],
+  },
+  {
+    question: "Koje godine su održane prve Zimske olimpijske igre?",
+    answers: [
+      { text: "1974", correct: false },
+      { text: "1890", correct: false },
+      { text: "1954", correct: false },
+      { text: "1924", correct: true },
+    ],
+  },
+  {
+    question: "Koja je prva igračka reklamirana na televiziji?",
+    answers: [
+      { text: "Barbika", correct: false },
+      { text: "Domine", correct: false },
+      { text: "Poli Džep", correct: false },
+      { text: "Gospodin Krompiroglavac", correct: true },
+    ],
+  },
+  {
+    question: "Koliko vagine ima ženka kengura?",
+    answers: [
+      { text: "Jednu", correct: false },
+      { text: "Dve", correct: false },
+      { text: "Četiri", correct: false },
+      { text: "Tri", correct: true },
+    ],
+  },
+  {
+    question:
+      "Koja od ovih zemalja ima zastavu koja se razlikuje sa obe strane?",
+    answers: [
+      { text: "Bahami", correct: false },
+      { text: "Kostarika", correct: false },
+      { text: "Danska", correct: false },
+      { text: "Paragvaj", correct: true },
+    ],
+  },
+  {
+    question: "Koji je najveći unutrašnji organ u ljudskom telu?",
+    answers: [
+      { text: "Srce", correct: false },
+      { text: "Pluća", correct: false },
+      { text: "Bubrezi", correct: false },
+      { text: "Jetra", correct: true },
+    ],
+  },
+  {
+    question: "Koji element ima hemijski simbol 'O'?",
+    answers: [
+      { text: "Osmijum", correct: false },
+      { text: "Opal", correct: false },
+      { text: "Oganeson", correct: false },
+      { text: "Kiseonik", correct: true },
+    ],
+  },
+  {
+    question: "Koji poznati umetnik je odsekao deo sopstvenog uva?",
+    answers: [
+      { text: "Leonardo da Vinči", correct: false },
+      { text: "Klod Mone", correct: false },
+      { text: "Pablo Pikaso", correct: false },
+      { text: "Vinsent van Gog", correct: true },
+    ],
+  },
+  {
+    question: "Koji je glavni grad Kanade?",
+    answers: [
+      { text: "Toronto", correct: false },
+      { text: "Vankuver", correct: false },
+      { text: "Montreal", correct: false },
+      { text: "Otava", correct: true },
+    ],
+  },
+  {
+    question: "Koliko nogu ima jastog?",
+    answers: [
+      { text: "6", correct: false },
+      { text: "8", correct: false },
+      { text: "12", correct: false },
+      { text: "10", correct: true },
+    ],
+  },
+  {
+    question: "Koja planeta ima najviše meseca?",
+    answers: [
+      { text: "Zemlja", correct: false },
+      { text: "Mars", correct: false },
+      { text: "Jupiter", correct: false },
+      { text: "Saturn", correct: true },
+    ],
+  },
+  {
+    question: "Koja je najmanja zemlja na svetu?",
+    answers: [
+      { text: "Monako", correct: false },
+      { text: "Lihtenštajn", correct: false },
+      { text: "San Marino", correct: false },
+      { text: "Vatikan", correct: true },
+    ],
+  },
+  {
+    question: "Koji instrument ima 47 žica i 7 pedala?",
+    answers: [
+      { text: "Klavir", correct: false },
+      { text: "Violina", correct: false },
+      { text: "Violončelo", correct: false },
+      { text: "Harfa", correct: true },
+    ],
+  },
+  {
+    question: "Koja ptica je poznata po oponašanju ljudskog govora?",
+    answers: [
+      { text: "Vrana", correct: false },
+      { text: "Sova", correct: false },
+      { text: "Orao", correct: false },
+      { text: "Papagaj", correct: true },
+    ],
+  },
+  {
+    question: "Na kom kontinentu se nalazi Sahara?",
+    answers: [
+      { text: "Azija", correct: false },
+      { text: "Australija", correct: false },
+      { text: "Južna Amerika", correct: false },
+      { text: "Afrika", correct: true },
+    ],
+  },
+];

@@ -1,4 +1,4 @@
-import { questions } from "./questions.js";
+import { questions, questionsSerbian } from "./questions.js";
 
 const questionDiv = document.querySelector(".js-question");
 const answerDivs = document.querySelectorAll(".answer");
@@ -8,6 +8,7 @@ const scoreGraphic = document.querySelector(".js-score");
 const timerGraphic = document.querySelector(".js-timer");
 const startGameDiv = document.querySelector(".js-start-game-div");
 const startGameButton = document.querySelector(".js-start-game-button");
+const languageSelect = document.querySelector(".js-language-select");
 
 let currentQuestionCounter = 0;
 let score = 0;
@@ -29,6 +30,11 @@ function shuffleArray(array) {
 }
 
 let shuffledArray = shuffleArray(questions);
+
+languageSelect.addEventListener("change", () => {
+  if (languageSelect.value === "sr")
+    shuffledArray = shuffleArray(questionsSerbian);
+});
 
 function startGame() {
   currentQuestionCounter = 0;
@@ -145,10 +151,9 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
-// Add dark/light theme
 // Add language swap
-// Add clickability to result graphics
 // Add media queries
-// Add questions with audio/images ??
+// Add dark/light theme
 // Add timer graphic
-// Add start button
+// Add clickability to result graphics
+// Add questions with audio/images ??
