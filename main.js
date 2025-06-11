@@ -10,6 +10,7 @@ const startGameDiv = document.querySelector(".js-start-game-div");
 const startGameButton = document.querySelector(".js-start-game-button");
 const languageSelect = document.querySelector(".js-language-select");
 const progressBar = document.querySelector(".js-progress-bar");
+const rewardGraphic = document.querySelector(".js-congratulations");
 
 let currentQuestionCounter = 0;
 let score = 0;
@@ -17,9 +18,11 @@ let click = 0;
 let timeout;
 let timer;
 let timeLeft = 10;
+let shuffledArray;
 scoreGraphic.innerHTML = "Score: 0/0";
 
 function shuffleArray(array) {
+  console.log("fsafsa");
   let shuffledArray = array;
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -30,19 +33,15 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 
-let shuffledArray = shuffleArray(questions);
-
-languageSelect.addEventListener("change", () => {
+function startGame() {
   if (languageSelect.value === "en") shuffledArray = shuffleArray(questions);
   else if (languageSelect.value === "sr")
     shuffledArray = shuffleArray(questionsSerbian);
-});
-
-function startGame() {
   currentQuestionCounter = 0;
   score = 0;
   startGameDiv.classList.add("hide");
   startGameButton.classList.add("hide");
+
   loadQuestion();
 }
 
@@ -98,10 +97,20 @@ function loadReset() {
     setTimeout(() => {
       resetButton.classList.add("reset-button-show");
     }, 2500);
+    if (score < 11 && score > 8) {
+      rewardGraphic.innerHTML = `<img src="congratulations.png" class="img-class" alt="Congratulations" />`;
+    }
+    if (score) {
+    }
+    if (score) {
+    }
+    if (score) {
+    }
   }
 }
 
 function restartGame() {
+  rewardGraphic.innerHTML = "";
   scoreGraphic.innerHTML = "Score: 0/0";
   resultGraphic[9].classList.remove("current");
   resetButton.classList.remove("reset-button-show");
@@ -158,7 +167,7 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
-// Add congratulations
+// Add congratulations (dodaj druge ifs za druge poene i nadji korektne slike vrv neki svg)
 // Add dark/light theme
 // Add clickability to result graphics
 // Add questions with audio/images ??
