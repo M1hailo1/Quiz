@@ -12,6 +12,16 @@
   --accent2: #6761a8;
   --accent3: #009b72;
   --text: #f26430;
+  --white: white;
+}
+
+.root-light {
+  --background: #f2f2f2;
+  --accent1: #0074a6;
+  --accent2: #ada8e6;
+  --accent3: #00c791;
+  --text: #2a2d34;
+  --white: rgb(102, 102, 102);
 }
 
 body {
@@ -20,6 +30,18 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: var(--background);
+}
+
+.dark-light-mode-change {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.dark-light-mode-change img {
+  height: 35px;
 }
 
 .header {
@@ -104,7 +126,7 @@ body {
 }
 
 .start-game-button:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--accent3);
   box-shadow: 0px 0px 10px var(--accent3);
 }
@@ -258,7 +280,7 @@ option img {
 
 @media only screen and (min-width: 900px) {
   .answer:hover {
-    color: #fff !important;
+    color: var(--white) !important;
     cursor: pointer;
     box-shadow: 0px 0px 10px var(--accent3);
   }

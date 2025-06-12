@@ -11,6 +11,7 @@ const startGameButton = document.querySelector(".js-start-game-button");
 const languageSelect = document.querySelector(".js-language-select");
 const progressBar = document.querySelector(".js-progress-bar");
 const rewardGraphic = document.querySelector(".js-congratulations");
+const darkLightMode = document.querySelector(".js-dark-light-mode-change");
 
 let currentQuestionCounter = 0;
 let score = 0;
@@ -162,6 +163,24 @@ function handleTimeout() {
   timeout = setTimeout(loadQuestion, 2500);
 }
 
+darkLightMode.addEventListener("click", () => {
+  document.body.classList.toggle("root-light");
+
+  // if (document.body.classList.contains("root-light"))
+  //   document.body.classList.remove("root-light");
+  // else document.body.classList.add("root-light");
+
+  const isTheme = document.body.classList.contains("root-light");
+  // if (isTheme) localStorage.setItem("theme", "light");
+  // else localStorage.setItem("theme", "dark");
+  localStorage.setItem("theme", isTheme ? "light" : "dark");
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") document.body.classList.add("root-light");
+});
+
 startGameButton.addEventListener("click", startGame);
 
 resetButton.addEventListener("click", restartGame);
@@ -177,6 +196,4 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
-// Try again da vrati na start game button mozda?
-// Add dark/light theme
 // Add clickability to result graphics
