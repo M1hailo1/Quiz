@@ -189,11 +189,31 @@ option img {
 .congratulations {
   position: absolute;
   z-index: 50;
+  height: 580px;
+  width: 840px;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
 .img-class {
-  width: 500px;
-  height: 500px;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.p-class-reward {
+  font-weight: 2rem;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text);
+  text-align: center;
 }
 
 .reset-button {
@@ -230,6 +250,10 @@ option img {
 
 .hide {
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 @media only screen and (min-width: 900px) {
@@ -315,6 +339,11 @@ option img {
     width: 180px;
     font-size: 1.7rem;
   }
+
+  .congratulations {
+    height: 530px;
+    width: 450px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,7 +376,7 @@ option img {
   }
 
   .game {
-    width: 400px;
+    width: 405px;
     height: 550px;
     margin-top: 20px;
     border: solid 3px var(--accent3);
@@ -392,6 +421,11 @@ option img {
     height: 50px;
     width: 180px;
     font-size: 1.6rem;
+  }
+
+  .congratulations {
+    height: 514px;
+    width: 375px;
   }
 }
 
@@ -470,5 +504,10 @@ option img {
     height: 50px;
     width: 180px;
     font-size: 1.5rem;
+  }
+
+  .congratulations {
+    height: 490px;
+    width: 310px;
   }
 }

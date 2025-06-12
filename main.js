@@ -22,7 +22,6 @@ let shuffledArray;
 scoreGraphic.innerHTML = "Score: 0/0";
 
 function shuffleArray(array) {
-  console.log("fsafsa");
   let shuffledArray = array;
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -96,20 +95,31 @@ function loadReset() {
   if (currentQuestionCounter === 10) {
     setTimeout(() => {
       resetButton.classList.add("reset-button-show");
+      resultGraphic[9].classList.remove("current");
+      rewardGraphic.classList.add("show");
     }, 2500);
-    if (score < 11 && score > 8) {
-      rewardGraphic.innerHTML = `<img src="congratulations.png" class="img-class" alt="Congratulations" />`;
+
+    if (score > 8) {
+      rewardGraphic.innerHTML = `<img src="congratulations.png" class="img-class" alt="Congratulations" />
+      <p class="p-class-reward">You answered ${score} out of 10 questions correctly.</p>`;
     }
-    if (score) {
+    if (score < 9 && score > 6) {
+      rewardGraphic.innerHTML = `<img src="good-job.png" class="img-class" alt="Good job" />
+      <p class="p-class-reward">You answered ${score} out of 10 questions correctly.</p>`;
     }
-    if (score) {
+    if (score < 7 && score > 3) {
+      rewardGraphic.innerHTML = `<img src="not-bad.png" class="img-class" alt="Be better" />
+      <p class="p-class-reward">You answered ${score} out of 10 questions correctly.</p>`;
     }
-    if (score) {
+    if (score < 4 && score >= 0) {
+      rewardGraphic.innerHTML = `<img src="horrible.png" class="img-class" alt="You are a failure" />
+      <p class="p-class-reward">You answered ${score} out of 10 questions correctly.</p>`;
     }
   }
 }
 
 function restartGame() {
+  rewardGraphic.classList.remove("show");
   rewardGraphic.innerHTML = "";
   scoreGraphic.innerHTML = "Score: 0/0";
   resultGraphic[9].classList.remove("current");
@@ -167,7 +177,6 @@ answerDivs.forEach((answer, index) => {
   });
 });
 
-// Add congratulations (dodaj druge ifs za druge poene i nadji korektne slike vrv neki svg)
+// Try again da vrati na start game button mozda?
 // Add dark/light theme
 // Add clickability to result graphics
-// Add questions with audio/images ??
